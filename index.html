@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I Love You</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="valentine-container">
+        <h1 class="heading">❤️ Happy Valentine's Day Zane ❤️</h1>
+        <div class="love-letter">
+            <p>Hey Zane, 
+                <span class="heart-emoji">♥</span> you probably already know where this is going. You’ve probably been skeptical or known for a while but I just want to be honest and say that I have feelings for you. I don’t know what it is about you? We don’t have any similar interests but you somehow find a way to get invested in my interests . You know how to make me smile and laugh when my days are rough. You always check up on me at the right time when I need you. You call yourself a “people pleaser” but all I see is a beautiful kind soul who wants to be the best person they can be. I honestly can’t describe how perfect and beautiful you are as a person, emotionally and physically. You tell yourself you’re not pretty enough or not good enough but I like to say otherwise. You’re really are perfect and good enough. I honestly can’t believe that dudes just don’t see that in you. You’re always lusted over and people never see the kind of person you really are. You’re so sweet, loving, and caring for others and that’s what I love about you. You’re one of my biggest reasons why I wake up feeling blessed because I have an amazing person like you in my life. You’re one of my biggest reasons of having something to live for. I know I may sound crazy because we never hang out in person but every time we talk, I’m happy I’m with my favorite person, even though we’re not physically together. But from the amount of time we’ve spent together on the phone, the conversations we’ve had, the stories of our lives, I like to believe I know enough that you’re someone I want to be with and a lot of people’s ideal girlfriend. Even though we don’t have a lot in common, like you don’t really like the nerdy things I like, I can look past those because I love you for who you are. That’s what love is about right? Interests towards someone despite them having things that are “imperfections”. Having interests for someone who are themselves. Besides your loving personality, I also want to speak on how beautiful you are. You say that you’re ugly and that your skin color is a contributing factor to it. I want to say that you’re not ugly. You are a literal goddess. And for your skin color, I know that you’ve talked about being bullied for it and I’m really sorry to hear that. Ive said this a bunch of times but your skin color has nothing to do with you being “ugly”. In fact, I believe that it’s a contributing factor to what makes you so beautiful and anybody that thinks otherwise is just ignorant and racist. If I have to be honest, I go through your ig highlights to admire how beautiful you are and I’m being serious lmao. You're so good at doing makeup and I love it when you do it. You don’t have a style, but every style you’ve tried, you've always looked so good in it. So, now it all comes down to one question… May I be your boyfriend, Zane? Maybe we should go on a few dates first? if we can even find the time to go on a date. If not, it’s ok.  I hope this didn’t ruin our friendship as I would like to remain good friends if you say no. I don’t ever want to lose an amazing person like you. I honestly don’t know how I would be doing right now mentally, if we never became friends. Again, I’m so glad to have you in my life and call you a friend. I’m glad to have someone I can talk to, someone who has my back and can brighten my day. One thing I want to point out, please do not date me out of pity. Just be honest with yourself and I. We can both agree that I’m not physically attractive and I know for a fact that I don’t meet the beauty standards of your ideal man. I also don’t want you feeling bad that you rejected me. I understand if you do reject me, whether if it has to do with me being not attractive or whatever the case is. One last thing I want to say is that I’m so proud of you for how strong you are. I know you’re not doing mentally well. You have suicidal and self destructive thoughts. But somehow, you push through that and carry on. I’m so glad and proud that you’re strong enough to do that because I know for a fact that amazing things are going to happen ahead later in your life. You’re special, and I don’t want you missing out on the amazing life you’re going to have down the road. I don't ever want a loved one who takes their life when they have great potential lying ahead of them. Stay strong Zane! I love you.❤️ Sleep well and have a goodnight.</p>
+        </div>
+    </div>
+    <div class="image-container">
+        <h1 class="heading">Us?</h1>
+        <img src="images/gae.jpg" alt="kiss" class="photo">
+    </div>
+    <div class="prompt-container">
+        <h2 class="prompt-text">May I be your huzz?</h2>
+        <div class="button-container">
+            <button class="yes-btn" onclick="handleYes()">YES</button>
+            <button class="no-btn" onclick="handleNo()">NO</button>
+        </div>
+    </div>
+    
+    <script>
+        
+        function handleYes() {
+            const container = document.querySelector('.valentine-container');
+            container.innerHTML = `
+                <h1 class="heading">🎉 YAY! ❤️</h1>
+                <div class="love-letter">
+                    <p>I love you so much Zane! 😊💖</p>
+                </div>
+            `;
+            document.querySelector('.prompt-container').style.display = 'none';
+            document.querySelector('.image-container').innerHTML = `
+                <div class="result-photo">
+                    <img src="images/heart.jpeg" alt="Happy couple" class="photo">
+                    <p>ignore my hairline and double chin smh</p>
+                </div>
+            `;
+        }
+        
+        function handleNo() {
+            const container = document.querySelector('.valentine-container');
+            container.innerHTML = `
+
+                    <div class="love-letter">
+                        <p>BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU BEHIND YOU</p>
+                    </div>
+                </div>
+            `;
+            document.querySelector('.image-container').innerHTML = `
+            <div class="sad-message">
+                <h1> Please Reconsider
+                <div class="result-photo">
+                    <img src="images/scary.jpg" alt="Sad moment" class="photo">
+                    <p>IM OUTSIDE YOUR WINDOW</p>
+                </div>
+            `;
+        }
+        </script>
+</body>
+</html>
